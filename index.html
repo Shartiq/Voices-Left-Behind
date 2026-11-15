@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#071426">
+    <meta name="description"
+        content="Voices Left Behind is an educational storytelling concept about NASA equipment that became silent on the Moon, Mars, and in deep space.">
+    <title>Voices Left Behind | NASA Space Apps 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="reading-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+    <header class="site-header" id="top">
+        <a class="brand" href="#home" aria-label="Voices Left Behind home">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>Voices Left Behind</span>
+        </a>
+        <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <a href="#overview">Project</a>
+            <a href="#missions">Missions</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#legacy">Legacy</a>
+            <a href="#sources">Sources</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <img class="hero-image" src="assets/insight-selfie.png"
+                alt="NASA InSight lander photographed on the surface of Mars">
+            <div class="hero-shade"></div>
+            <div class="hero-content">
+                <p class="eyebrow">NASA Space Apps Challenge 2026 · Educational concept</p>
+                <h1 id="hero-title">Voices<br><span>Left Behind</span></h1>
+                <p class="hero-lead">What would silent spacecraft tell us if they could speak one last time?</p>
+                <p class="hero-copy">An interactive story about equipment left on the Moon, Mars, and beyond — and the
+                    knowledge that continued long after the signals stopped.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#missions">Explore the missions</a>
+                    <a class="button button-ghost" href="#overview">About the project</a>
+                </div>
+            </div>
+            <p class="image-credit">Image: NASA/JPL-Caltech</p>
+            <a class="scroll-cue" href="#overview" aria-label="Scroll to project overview"><span></span>Scroll to
+                begin</a>
+        </section>
+
+        <section class="section intro" id="overview">
+            <div class="section-heading reveal">
+                <p class="eyebrow">The project</p>
+                <h2>A museum with no walls</h2>
+                <p>Space exploration leaves physical traces. Scientific stations rest on the Moon. Landers and aircraft
+                    stand silent on Mars. Probes continue through deep space after Earth can no longer hear them.</p>
+            </div>
+            <div class="intro-grid">
+                <article class="intro-statement reveal">
+                    <p class="large-quote">“The mission ended. The evidence did not.”</p>
+                    <p><strong>Voices Left Behind</strong> turns four real NASA missions into first-person stories. Each
+                        story begins with an imagined voice, then separates emotion from evidence with verified mission
+                        facts, official imagery, and links to NASA sources.</p>
+                    <p class="concept-note"><strong>Project status:</strong> this website is an original educational
+                        storytelling concept and prototype. It is not an official NASA product and does not claim that
+                        the spacecraft can actually speak.</p>
+                </article>
+                <div class="fact-strip reveal" aria-label="Project scope">
+                    <div><strong>4</strong><span>mission stories</span></div>
+                    <div><strong>3</strong><span>environments</span></div>
+                    <div><strong>55+</strong><span>years of history</span></div>
+                    <div><strong>1</strong><span>shared legacy</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section categories" aria-labelledby="category-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Categories of silent hardware</p>
+                <h2 id="category-title">Different places. Different endings.</h2>
+            </div>
+            <div class="category-grid">
+                <article class="category-card moon reveal">
+                    <span class="category-number">01</span>
+                    <h3>The Moon</h3>
+                    <p>With no weather or flowing water, hardware can remain on the lunar surface for decades. Apollo
+                        science packages became remote laboratories after astronauts returned home.</p>
+                    <a href="#apollo">Meet Apollo 12 ALSEP</a>
+                </article>
+                <article class="category-card mars reveal">
+                    <span class="category-number">02</span>
+                    <h3>Mars</h3>
+                    <p>Dust, cold, power limits, and mechanical damage can silence machines. Even so, Martian landers
+                        and aircraft continue to shape new mission designs.</p>
+                    <a href="#insight">Meet InSight and Ingenuity</a>
+                </article>
+                <article class="category-card deep-space reveal">
+                    <span class="category-number">03</span>
+                    <h3>Deep space</h3>
+                    <p>A probe can keep moving after communication becomes impossible. Its trajectory turns a finished
+                        mission into a journey measured in millions of years.</p>
+                    <a href="#pioneer">Meet Pioneer 10</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section missions" id="missions" aria-labelledby="missions-title">
+            <div class="missions-header reveal">
+                <div class="section-heading">
+                    <p class="eyebrow">Mission archive</p>
+                    <h2 id="missions-title">Four stories from the edge of silence</h2>
+                </div>
+                <div class="filter-group" aria-label="Filter mission stories">
+                    <button class="filter-button active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-button" data-filter="moon" aria-pressed="false">Moon</button>
+                    <button class="filter-button" data-filter="mars" aria-pressed="false">Mars</button>
+                    <button class="filter-button" data-filter="deep-space" aria-pressed="false">Deep space</button>
+                </div>
+            </div>
+
+            <article class="mission-story reveal" id="apollo" data-category="moon">
+                <figure class="mission-media">
+                    <button class="image-button" data-full="assets/apollo12-alsep.jpg"
+                        aria-label="Open Apollo 12 ALSEP image full screen">
+                        <img src="assets/apollo12-alsep.jpg"
+                            alt="Apollo 12 astronaut deploying scientific equipment on the Moon">
+                    </button>
+                    <figcaption>Photo: NASA · Apollo 12 ALSEP deployment</figcaption>
+                </figure>
+                <div class="mission-copy">
+                    <p class="mission-location moon-text">The Moon · November 1969–September 1977</p>
+                    <h3>Apollo 12 ALSEP</h3>
+                    <blockquote>“The astronauts left. I kept listening.”</blockquote>
+                    <p>Apollo 12 astronauts deployed the Apollo Lunar Surface Experiments Package, or ALSEP, near their
+                        landing site. A central station connected instruments that measured seismic activity, magnetic
+                        fields, the solar wind, and the lunar environment.</p>
+                    <p>The astronauts left after a short surface mission, but the equipment continued working remotely.
+                        For almost eight years, the network sent measurements back to Earth. NASA shut down the Apollo
+                        ALSEP network in September 1977 as budgets and mission priorities changed.</p>
+                    <dl class="mission-facts">
+                        <div>
+                            <dt>Why it stayed</dt>
+                            <dd>ALSEP was designed as a surface observatory, not as return cargo.</dd>
+                        </div>
+                        <div>
+                            <dt>What it revealed</dt>
+                            <dd>Moonquakes, meteor impacts, and clues about the lunar interior.</dd>
+                        </div>
+                        <div>
+                            <dt>What remains</dt>
+                            <dd>Hardware on the Moon and recordings that scientists still reanalyze.</dd>
+                        </div>
+                    </dl>
+                    <a class="source-link" href="https://science.nasa.gov/image-detail/as12-46-6789-alsep/"
+                        target="_blank" rel="noreferrer">Official NASA image and context ↗</a>
+                </div>
+            </article>
+
+            <article class="mission-story reverse reveal" id="insight" data-category="mars">
+                <figure class="mission-media">
+                    <button class="image-button" data-full="assets/insight-diagram.jpg"
+                        aria-label="Open InSight diagram full screen">
+                        <img src="assets/insight-diagram.jpg"
+                            alt="NASA diagram identifying the InSight lander and its instruments on Mars">
+                    </button>
+                    <figcaption>Image: NASA/JPL-Caltech · InSight instruments</figcaption>
+                </figure>
+                <div class="mission-copy">
+                    <p class="mission-location mars-text">Mars · 2018–2022</p>
+                    <h3>InSight</h3>
+                    <blockquote>“I stayed still so Mars could speak.”</blockquote>
+                    <p>InSight was a stationary geophysical observatory. Instead of traveling across the surface, it
+                        placed an extremely sensitive seismometer on the ground and listened for vibrations moving
+                        through the planet.</p>
+                    <p>When seismic waves pass through different materials, their speed and direction change. Scientists
+                        used those changes to investigate the thickness of the Martian crust and the structure of the
+                        mantle and core. Dust gradually reduced the sunlight reaching the lander’s solar panels, and
+                        NASA ended the mission after communication stopped in December 2022.</p>
+                    <dl class="mission-facts">
+                        <div>
+                            <dt>Why it stayed</dt>
+                            <dd>The lander needed a stable location for precise geophysical measurements.</dd>
+                        </div>
+                        <div>
+                            <dt>What it revealed</dt>
+                            <dd>Marsquakes and the first detailed seismic view inside another rocky planet.</dd>
+                        </div>
+                        <div>
+                            <dt>What remains</dt>
+                            <dd>A silent lander in Elysium Planitia and a major archive of planetary data.</dd>
+                        </div>
+                    </dl>
+                    <a class="source-link" href="https://science.nasa.gov/mission/insight/" target="_blank"
+                        rel="noreferrer">NASA InSight mission page ↗</a>
+                </div>
+            </article>
+
+            <article class="mission-story reveal" id="ingenuity" data-category="mars">
+                <figure class="mission-media">
+                    <button class="image-button" data-full="assets/ingenuity-closeup.jpg"
+                        aria-label="Open Ingenuity image full screen">
+                        <img src="assets/ingenuity-closeup.jpg"
+                            alt="NASA's Ingenuity helicopter standing on the Martian surface">
+                    </button>
+                    <figcaption>Photo: NASA/JPL-Caltech/ASU/MSSS · Ingenuity on Mars</figcaption>
+                </figure>
+                <div class="mission-copy">
+                    <p class="mission-location mars-text">Mars · 2021–2024</p>
+                    <h3>Ingenuity</h3>
+                    <blockquote>“They asked for five flights. I completed seventy-two.”</blockquote>
+                    <p>Ingenuity arrived beneath the Perseverance rover as a technology demonstration. On April 19,
+                        2021, it completed the first powered, controlled flight on another planet. Engineers had planned
+                        up to five test flights.</p>
+                    <p>The helicopter moved beyond that original goal and became an aerial scout. It demonstrated
+                        navigation in the thin Martian atmosphere, photographed terrain ahead of the rover, and
+                        completed 72 flights. Rotor damage during its final landing ended flight operations in January
+                        2024.</p>
+                    <dl class="mission-facts">
+                        <div>
+                            <dt>Why it stayed</dt>
+                            <dd>No return vehicle existed, and the aircraft served as a local flight experiment.</dd>
+                        </div>
+                        <div>
+                            <dt>What it revealed</dt>
+                            <dd>Powered flight and aerial scouting are possible in the Martian atmosphere.</dd>
+                        </div>
+                        <div>
+                            <dt>What remains</dt>
+                            <dd>A small helicopter at its final airfield and a blueprint for future rotorcraft.</dd>
+                        </div>
+                    </dl>
+                    <a class="source-link"
+                        href="https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+                        target="_blank" rel="noreferrer">NASA Ingenuity mission page ↗</a>
+                </div>
+            </article>
+
+            <article class="mission-story reverse reveal" id="pioneer" data-category="deep-space">
+                <figure class="mission-media portrait-media">
+                    <button class="image-button" data-full="assets/pioneer-outbound.jpg"
+                        aria-label="Open Pioneer 10 artist concept full screen">
+                        <img src="assets/pioneer-outbound.jpg"
+                            alt="NASA artist concept of Pioneer 10 traveling through deep space">
+                    </button>
+                    <figcaption>Artist’s concept: NASA Ames · Pioneer outbound</figcaption>
+                </figure>
+                <div class="mission-copy">
+                    <p class="mission-location space-text">Deep space · Launched 1972</p>
+                    <h3>Pioneer 10</h3>
+                    <blockquote>“My final signal faded. My journey did not.”</blockquote>
+                    <p>Pioneer 10 became the first spacecraft to cross the asteroid belt and the first to make close
+                        observations of Jupiter. Its images and measurements helped reveal the scale of Jupiter’s
+                        radiation environment and prepared the way for later outer-planet missions.</p>
+                    <p>Earth received the probe’s last weak signal on January 23, 2003. At the time, it was about 12.23
+                        billion kilometers away. Pioneer 10 continues outward without an active link to Earth, carrying
+                        the famous plaque designed to communicate information about humanity and our origin.</p>
+                    <dl class="mission-facts">
+                        <div>
+                            <dt>Why it stayed</dt>
+                            <dd>It was launched on a one-way trajectory beyond the outer planets.</dd>
+                        </div>
+                        <div>
+                            <dt>What it revealed</dt>
+                            <dd>The asteroid belt, Jupiter, and the challenge of deep-space communication.</dd>
+                        </div>
+                        <div>
+                            <dt>What remains</dt>
+                            <dd>A silent spacecraft moving toward the direction of Aldebaran.</dd>
+                        </div>
+                    </dl>
+                    <a class="source-link" href="https://science.nasa.gov/mission/pioneer-10/" target="_blank"
+                        rel="noreferrer">NASA Pioneer 10 mission page ↗</a>
+                </div>
+            </article>
+            <p class="filter-empty" id="filter-empty" hidden>No mission stories match this filter.</p>
+        </section>
+
+        <section class="timeline-section" id="timeline" aria-labelledby="timeline-title">
+            <div class="section timeline-inner">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Timeline</p>
+                    <h2 id="timeline-title">Signals across generations</h2>
+                    <p>These machines belong to different eras, but each one extended the reach of human observation.
+                    </p>
+                </div>
+                <ol class="timeline">
+                    <li class="reveal"><time>1969</time>
+                        <div>
+                            <h3>Apollo 12 deploys ALSEP</h3>
+                            <p>A lunar landing becomes a long-term science station.</p>
+                        </div>
+                    </li>
+                    <li class="reveal"><time>1972</time>
+                        <div>
+                            <h3>Pioneer 10 launches</h3>
+                            <p>A compact probe begins the first journey through the asteroid belt to Jupiter.</p>
+                        </div>
+                    </li>
+                    <li class="reveal"><time>1977</time>
+                        <div>
+                            <h3>The ALSEP network shuts down</h3>
+                            <p>Eight years of Apollo surface science enter the historical data archive.</p>
+                        </div>
+                    </li>
+                    <li class="reveal"><time>2003</time>
+                        <div>
+                            <h3>Pioneer’s final signal</h3>
+                            <p>The carrier wave becomes too weak, while the spacecraft continues outward.</p>
+                        </div>
+                    </li>
+                    <li class="reveal"><time>2018</time>
+                        <div>
+                            <h3>InSight lands on Mars</h3>
+                            <p>A stationary observatory begins listening beneath the surface.</p>
+                        </div>
+                    </li>
+                    <li class="reveal"><time>2021</time>
+                        <div>
+                            <h3>Ingenuity flies</h3>
+                            <p>The first powered flight on another planet opens a new form of exploration.</p>
+                        </div>
+                    </li>
+                    <li class="reveal"><time>2024</time>
+                        <div>
+                            <h3>Ingenuity’s flight mission ends</h3>
+                            <p>Seventy-two flights leave a practical foundation for future aerial explorers.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section endings" aria-labelledby="endings-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">How missions become silent</p>
+                <h2 id="endings-title">Silence has more than one cause</h2>
+            </div>
+            <div class="ending-list">
+                <article class="reveal"><span>01</span>
+                    <div>
+                        <h3>Planned shutdown</h3>
+                        <p>A mission may end because operating costs and scientific priorities change. Apollo’s ALSEP
+                            stations still worked when NASA switched the network off.</p>
+                    </div>
+                </article>
+                <article class="reveal"><span>02</span>
+                    <div>
+                        <h3>Power loss</h3>
+                        <p>Solar-powered equipment depends on light. Dust on InSight’s panels steadily reduced the
+                            energy available for science and communication.</p>
+                    </div>
+                </article>
+                <article class="reveal"><span>03</span>
+                    <div>
+                        <h3>Physical damage</h3>
+                        <p>Exploration hardware works without repair crews. Ingenuity could no longer fly after its
+                            rotor blades suffered damage.</p>
+                    </div>
+                </article>
+                <article class="reveal"><span>04</span>
+                    <div>
+                        <h3>Distance</h3>
+                        <p>Radio signals weaken across billions of kilometers. Pioneer 10 moved beyond the practical
+                            limit of communication with Earth.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="comparison" aria-labelledby="comparison-title">
+            <div class="section comparison-inner">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Mission comparison</p>
+                    <h2 id="comparison-title">One archive, four kinds of knowledge</h2>
+                </div>
+                <div class="table-wrap reveal" tabindex="0" aria-label="Scrollable mission comparison table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Explorer</th>
+                                <th>Location</th>
+                                <th>Hardware</th>
+                                <th>Primary contribution</th>
+                                <th>Reason for silence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Apollo 12 ALSEP</th>
+                                <td>Moon</td>
+                                <td>Surface instrument station</td>
+                                <td>Moonquakes, impacts, lunar environment</td>
+                                <td>Planned shutdown</td>
+                            </tr>
+                            <tr>
+                                <th>InSight</th>
+                                <td>Mars</td>
+                                <td>Stationary geophysical lander</td>
+                                <td>Crust, mantle, core, marsquakes</td>
+                                <td>Loss of solar power</td>
+                            </tr>
+                            <tr>
+                                <th>Ingenuity</th>
+                                <td>Mars</td>
+                                <td>Experimental helicopter</td>
+                                <td>Flight in thin air and aerial scouting</td>
+                                <td>Rotor damage</td>
+                            </tr>
+                            <tr>
+                                <th>Pioneer 10</th>
+                                <td>Deep space</td>
+                                <td>Outer-planet probe</td>
+                                <td>Asteroid belt, Jupiter, long-range communication</td>
+                                <td>Signal too weak</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section legacy" id="legacy" aria-labelledby="legacy-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Scientific legacy</p>
+                <h2 id="legacy-title">What survives after the signal stops?</h2>
+            </div>
+            <div class="legacy-grid">
+                <article class="legacy-main reveal">
+                    <p>Hardware may become silent, but exploration continues through the data, engineering lessons, and
+                        questions it leaves behind.</p>
+                </article>
+                <article class="legacy-item reveal"><span>Data</span>
+                    <h3>Measurements return home</h3>
+                    <p>Scientists can restore, recalibrate, and compare historical recordings with new models and
+                        missions.</p>
+                </article>
+                <article class="legacy-item reveal"><span>Design</span>
+                    <h3>Failures become instructions</h3>
+                    <p>Power limits, damaged parts, and communication challenges help engineers build more resilient
+                        spacecraft.</p>
+                </article>
+                <article class="legacy-item reveal"><span>Memory</span>
+                    <h3>Stories make evidence human</h3>
+                    <p>Storytelling helps new audiences understand why an old machine and its archive still deserve
+                        attention.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section method" aria-labelledby="method-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Storytelling method</p>
+                <h2 id="method-title">How this concept turns equipment into a narrator</h2>
+            </div>
+            <div class="method-steps">
+                <article class="reveal"><strong>1</strong>
+                    <h3>Begin with a voice</h3>
+                    <p>A short first-person line creates curiosity and emotional connection.</p>
+                </article>
+                <article class="reveal"><strong>2</strong>
+                    <h3>Return to evidence</h3>
+                    <p>Mission dates, technical details, and outcomes come from NASA sources.</p>
+                </article>
+                <article class="reveal"><strong>3</strong>
+                    <h3>Show the real machine</h3>
+                    <p>Official photographs and credited artist concepts keep the story visually grounded.</p>
+                </article>
+                <article class="reveal"><strong>4</strong>
+                    <h3>Connect past and future</h3>
+                    <p>Each ending explains what later scientists, engineers, and explorers inherited.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section sources" id="sources" aria-labelledby="sources-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Sources and transparency</p>
+                <h2 id="sources-title">Evidence behind the story</h2>
+                <p>The narrative voice is creative. Mission facts and images are sourced from NASA.</p>
+            </div>
+            <div class="source-columns">
+                <div class="source-list reveal">
+                    <h3>NASA references</h3>
+                    <a href="https://www.spaceappschallenge.org/2026/challenges/nasas-discarded-equipment-storytelling/"
+                        target="_blank" rel="noreferrer"><span>Challenge brief</span><small>NASA Space Apps
+                            2026</small></a>
+                    <a href="https://pds.nasa.gov/ds-view/pds/viewContext.jsp?identifier=urn:nasa:pds:context:instrument_host:spacecraft.a12a"
+                        target="_blank" rel="noreferrer"><span>Apollo 12 ALSEP</span><small>NASA Planetary Data
+                            System</small></a>
+                    <a href="https://science.nasa.gov/moon/moonquakes/" target="_blank"
+                        rel="noreferrer"><span>Moonquakes</span><small>NASA Science</small></a>
+                    <a href="https://science.nasa.gov/mission/insight/" target="_blank" rel="noreferrer"><span>InSight
+                            mission</span><small>NASA Science</small></a>
+                    <a href="https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+                        target="_blank" rel="noreferrer"><span>Ingenuity mission</span><small>NASA Science</small></a>
+                    <a href="https://science.nasa.gov/mission/pioneer-10/" target="_blank"
+                        rel="noreferrer"><span>Pioneer 10 mission</span><small>NASA Science</small></a>
+                </div>
+                <aside class="disclosure reveal">
+                    <p class="eyebrow">AI disclosure</p>
+                    <h3>How AI supported the project</h3>
+                    <p>OpenAI ChatGPT/Codex supported research organization, English editing, web design, and
+                        production. Mission facts were checked against official NASA sources.</p>
+                    <p>All mission imagery used on this site comes from official NASA pages and is credited beside the
+                        image. AI did not replace mission evidence or create the scientific claims.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="closing">
+            <img src="assets/pioneer-outbound.jpg"
+                alt="NASA artist concept of Pioneer 10 continuing through deep space">
+            <div class="closing-shade"></div>
+            <div class="closing-copy reveal">
+                <p class="eyebrow">Final thought</p>
+                <h2>Exploration does not end when a signal stops.</h2>
+                <p>The machine becomes silent. The data becomes an archive. The mission becomes a lesson for whoever
+                    travels next.</p>
+                <a class="button button-primary" id="return-to-top" href="#home">Return to the beginning</a>
+            </div>
+            <p class="image-credit">Artist’s concept: NASA Ames</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div><strong>Voices Left Behind</strong><span>NASA Space Apps Challenge 2026 project concept</span></div>
+        <p>Educational prototype · Not an official NASA website</p>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">×</button>
+        <img id="lightbox-image" alt="">
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

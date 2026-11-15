@@ -31,6 +31,8 @@ The project responds to the NASA Space Apps Challenge theme **“Abandoned but n
 
 - Responsive, single-page experience for desktop and mobile
 - Mission filters for the Moon, Mars, and deep space
+- Fast mission index and active section navigation
+- Live filter status and persistent return-to-top control
 - Accessible keyboard navigation, skip link, and reduced-motion support
 - Full-screen mission image viewer
 - Mission timeline and comparison table
@@ -45,11 +47,11 @@ We are a five-person student team from **STEP IT Academy in Kyiv, Ukraine**.
 
 | Team member | Telegram |
 | --- | --- |
-| Олексій Солоха | [@craftle0](https://t.me/craftle0) |
-| Георгій Вересенко | [@veruuxxgg](https://t.me/veruuxxgg) |
-| Павло Стойчев | [@pavel0x](https://t.me/pavel0x) |
-| Тимофій Якобчук | [@yakobchuktimofey](https://t.me/yakobchuktimofey) |
-| Тимофій Шарабурін | [@Shartiq](https://t.me/Shartiq) |
+| Oleksii Solokha | [@craftle0](https://t.me/craftle0) |
+| Heorhii Veresenko | [@veruuxxgg](https://t.me/veruuxxgg) |
+| Pavlo Stoichev | [@pavel0x](https://t.me/pavel0x) |
+| Tymofii Yakobchuk | [@yakobchuktimofey](https://t.me/yakobchuktimofey) |
+| Tymofii Sharaburin | [@Shartiq](https://t.me/Shartiq) |
 
 ## Technology
 

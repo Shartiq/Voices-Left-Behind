@@ -7,12 +7,23 @@
     <meta name="theme-color" content="#071426">
     <meta name="description"
         content="Voices Left Behind is an educational storytelling concept about NASA equipment that became silent on the Moon, Mars, and in deep space.">
+    <meta name="author" content="Team ITSTEP_abuze, Kyiv, Ukraine">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Voices Left Behind | NASA Space Apps 2026">
+    <meta property="og:description"
+        content="Four silent machines. Four verified mission histories. One interactive story about the science that remained.">
+    <meta property="og:url" content="https://voices-left-behind-nasa-2026.vividllama2.chatgpt.site/">
+    <meta property="og:image"
+        content="https://voices-left-behind-nasa-2026.vividllama2.chatgpt.site/assets/insight-selfie.png">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Voices Left Behind | NASA Space Apps 2026</title>
+    <link rel="canonical" href="https://voices-left-behind-nasa-2026.vividllama2.chatgpt.site/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -38,7 +49,7 @@
 
     <main id="main">
         <section class="hero" id="home" aria-labelledby="hero-title">
-            <img class="hero-image" src="assets/insight-selfie.png"
+            <img class="hero-image" src="assets/insight-selfie.png" fetchpriority="high" decoding="async"
                 alt="NASA InSight lander photographed on the surface of Mars">
             <div class="hero-shade"></div>
             <div class="hero-content">
@@ -57,6 +68,13 @@
                     <a class="button button-ghost" href="#overview">About the project</a>
                 </div>
             </div>
+            <nav class="hero-mission-index" aria-label="Featured mission index">
+                <p>Mission archive</p>
+                <a href="#apollo"><span>01 · Moon</span><strong>Apollo 12 ALSEP</strong></a>
+                <a href="#insight"><span>02 · Mars</span><strong>InSight</strong></a>
+                <a href="#ingenuity"><span>03 · Mars</span><strong>Ingenuity</strong></a>
+                <a href="#pioneer"><span>04 · Deep space</span><strong>Pioneer 10</strong></a>
+            </nav>
             <p class="image-credit"><a href="https://science.nasa.gov/resource/insights-first-selfie-2/?site=insight"
                     target="_blank" rel="noreferrer">InSight’s first selfie · Credit: NASA/JPL-Caltech · Source ↗</a></p>
             <a class="scroll-cue" href="#overview" aria-label="Scroll to project overview"><span></span>Scroll to
@@ -86,6 +104,24 @@
                     <div><strong>55+</strong><span>years of history</span></div>
                     <div><strong>1</strong><span>shared legacy</span></div>
                 </div>
+            </div>
+            <div class="evidence-key reveal" aria-label="How to read the mission stories">
+                <article>
+                    <span>Story</span>
+                    <h3>Imagined voice</h3>
+                    <p>A short first-person line creates an emotional point of entry. It is always labeled as creative
+                        narration.</p>
+                </article>
+                <article>
+                    <span>Evidence</span>
+                    <h3>Verified facts</h3>
+                    <p>Dates, discoveries, mission endings, and technical details are checked against NASA material.</p>
+                </article>
+                <article>
+                    <span>Source</span>
+                    <h3>Follow the record</h3>
+                    <p>Every mission and image includes a direct route to the official source behind the story.</p>
+                </article>
             </div>
         </section>
 
@@ -125,11 +161,15 @@
                     <p class="eyebrow">Mission archive</p>
                     <h2 id="missions-title">Four stories from the edge of silence</h2>
                 </div>
-                <div class="filter-group" aria-label="Filter mission stories">
-                    <button class="filter-button active" data-filter="all" aria-pressed="true">All</button>
-                    <button class="filter-button" data-filter="moon" aria-pressed="false">Moon</button>
-                    <button class="filter-button" data-filter="mars" aria-pressed="false">Mars</button>
-                    <button class="filter-button" data-filter="deep-space" aria-pressed="false">Deep space</button>
+                <div class="filter-tools">
+                    <div class="filter-group" aria-label="Filter mission stories">
+                        <button class="filter-button active" data-filter="all" aria-pressed="true">All</button>
+                        <button class="filter-button" data-filter="moon" aria-pressed="false">Moon</button>
+                        <button class="filter-button" data-filter="mars" aria-pressed="false">Mars</button>
+                        <button class="filter-button" data-filter="deep-space" aria-pressed="false">Deep space</button>
+                    </div>
+                    <p class="filter-status" id="filter-status" role="status" aria-live="polite">Showing all 4
+                        missions</p>
                 </div>
             </div>
 
@@ -137,7 +177,7 @@
                 <figure class="mission-media">
                     <button class="image-button" data-full="assets/apollo12-alsep.jpg"
                         aria-label="Open Apollo 12 ALSEP image full screen">
-                        <img src="assets/apollo12-alsep.jpg"
+                        <img src="assets/apollo12-alsep.jpg" loading="lazy" decoding="async"
                             alt="Apollo 12 astronaut deploying scientific equipment on the Moon">
                     </button>
                     <figcaption>Apollo 12 ALSEP deployment · Credit: NASA · <a
@@ -178,7 +218,7 @@
                 <figure class="mission-media">
                     <button class="image-button" data-full="assets/insight-diagram.jpg"
                         aria-label="Open InSight diagram full screen">
-                        <img src="assets/insight-diagram.jpg"
+                        <img src="assets/insight-diagram.jpg" loading="lazy" decoding="async"
                             alt="NASA diagram identifying the InSight lander and its instruments on Mars">
                     </button>
                     <figcaption>InSight instruments · Credit: NASA/JPL-Caltech · <a
@@ -220,7 +260,7 @@
                 <figure class="mission-media">
                     <button class="image-button" data-full="assets/ingenuity-closeup.jpg"
                         aria-label="Open Ingenuity image full screen">
-                        <img src="assets/ingenuity-closeup.jpg"
+                        <img src="assets/ingenuity-closeup.jpg" loading="lazy" decoding="async"
                             alt="NASA's Ingenuity helicopter standing on the Martian surface">
                     </button>
                     <figcaption>Ingenuity on Mars · Credit: NASA/JPL-Caltech/ASU/MSSS · <a
@@ -263,7 +303,7 @@
                 <figure class="mission-media portrait-media">
                     <button class="image-button" data-full="assets/pioneer-outbound.jpg"
                         aria-label="Open Pioneer 10 artist concept full screen">
-                        <img src="assets/pioneer-outbound.jpg"
+                        <img src="assets/pioneer-outbound.jpg" loading="lazy" decoding="async"
                             alt="NASA artist concept of Pioneer 10 traveling through deep space">
                     </button>
                     <figcaption>Outbound Pioneer (artist’s concept) · Credit: NASA Ames · <a
@@ -345,6 +385,12 @@
                         <div>
                             <h3>Ingenuity flies</h3>
                             <p>The first powered flight on another planet opens a new form of exploration.</p>
+                        </div>
+                    </li>
+                    <li class="reveal"><time>2022</time>
+                        <div>
+                            <h3>InSight falls silent</h3>
+                            <p>Dust-covered solar panels can no longer provide enough energy for communication.</p>
                         </div>
                     </li>
                     <li class="reveal"><time>2024</time>
@@ -503,7 +549,7 @@
             <div class="section team-inner">
                 <div class="team-identity reveal">
                     <div class="team-logo-wrap">
-                        <img src="assets/step-it-academy-logo.jpg"
+                        <img src="assets/step-it-academy-logo.jpg" loading="lazy" decoding="async"
                             alt="STEP IT Academy logo supplied by the project team">
                     </div>
                     <div>
@@ -517,28 +563,28 @@
                 <div class="team-roster" aria-label="Team members">
                     <a class="member-card reveal" href="https://t.me/craftle0" target="_blank" rel="noreferrer">
                         <span class="member-number">01</span>
-                        <span><strong>Олексій Солоха</strong><small>@craftle0</small></span>
+                        <span><strong>Oleksii Solokha</strong><small>@craftle0</small></span>
                         <span class="member-arrow" aria-hidden="true">↗</span>
                     </a>
                     <a class="member-card reveal" href="https://t.me/veruuxxgg" target="_blank" rel="noreferrer">
                         <span class="member-number">02</span>
-                        <span><strong>Георгій Вересенко</strong><small>@veruuxxgg</small></span>
+                        <span><strong>Heorhii Veresenko</strong><small>@veruuxxgg</small></span>
                         <span class="member-arrow" aria-hidden="true">↗</span>
                     </a>
                     <a class="member-card reveal" href="https://t.me/pavel0x" target="_blank" rel="noreferrer">
                         <span class="member-number">03</span>
-                        <span><strong>Павло Стойчев</strong><small>@pavel0x</small></span>
+                        <span><strong>Pavlo Stoichev</strong><small>@pavel0x</small></span>
                         <span class="member-arrow" aria-hidden="true">↗</span>
                     </a>
                     <a class="member-card reveal" href="https://t.me/yakobchuktimofey" target="_blank"
                         rel="noreferrer">
                         <span class="member-number">04</span>
-                        <span><strong>Тимофій Якобчук</strong><small>@yakobchuktimofey</small></span>
+                        <span><strong>Tymofii Yakobchuk</strong><small>@yakobchuktimofey</small></span>
                         <span class="member-arrow" aria-hidden="true">↗</span>
                     </a>
                     <a class="member-card reveal" href="https://t.me/Shartiq" target="_blank" rel="noreferrer">
                         <span class="member-number">05</span>
-                        <span><strong>Тимофій Шарабурін</strong><small>@Shartiq</small></span>
+                        <span><strong>Tymofii Sharaburin</strong><small>@Shartiq</small></span>
                         <span class="member-arrow" aria-hidden="true">↗</span>
                     </a>
                 </div>
@@ -590,7 +636,7 @@
         </section>
 
         <section class="closing">
-            <img src="assets/pioneer-outbound.jpg"
+            <img src="assets/pioneer-outbound.jpg" loading="lazy" decoding="async"
                 alt="NASA artist concept of Pioneer 10 continuing through deep space">
             <div class="closing-shade"></div>
             <div class="closing-copy reveal">
@@ -606,6 +652,10 @@
         </section>
     </main>
 
+    <a class="floating-top" id="floating-top" href="#top" aria-label="Back to the top of the page">
+        <span aria-hidden="true">↑</span>
+    </a>
+
     <footer class="footer">
         <div><strong>Voices Left Behind</strong><span>Created by ITSTEP_abuze · Kyiv, Ukraine</span></div>
         <p>NASA Space Apps Challenge 2026 student project · Not an official NASA website</p>
@@ -614,6 +664,7 @@
     <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
         <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">×</button>
         <img id="lightbox-image" alt="">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
     </dialog>
 
     <script src="script.js"></script>

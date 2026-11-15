@@ -9,7 +9,7 @@
 
   **NASA Space Apps Challenge 2026 · Team ITSTEP_abuze · Kyiv, Ukraine**
 
-  [Explore the live website](https://voices-left-behind-nasa-2026.vividllama2.chatgpt.site)
+  [Explore the live website](https://shartiq.github.io/Voices-Left-Behind/)
 </div>
 
 ## About the project
